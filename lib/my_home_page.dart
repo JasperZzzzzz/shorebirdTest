@@ -29,7 +29,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 image: DecorationImage(
                     image: NetworkImage('url'), fit: BoxFit.cover)),
             child: ListView(
-              children: const [Text('頭部')],
+              children: const [Text('側邊欄')],
             ),
           ),
           const ListTile(
