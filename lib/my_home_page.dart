@@ -93,16 +93,16 @@ class _MyHomePageState extends State<MyHomePage> {
           child: TabBarView(
             children: [
               Book(
+                imgSrc: 'https://openhome.cc/Gossip/images/facebook.png',
+                name: 'Python 4.5 技術手冊',
+              ),
+              Book(
                 imgSrc: 'https://openhome.cc/Gossip/images/ACL059300.jpg',
-                name: 'Java SE 14 技術手冊',
+                name: 'Java SE 20 技術手冊',
               ),
               Book(
-                imgSrc: 'https://openhome.cc/Gossip/images/ACL054400.jpg',
-                name: 'Python 3.7 技術手冊',
-              ),
-              Book(
-                imgSrc: 'https://openhome.cc/Gossip/images/AEL022800.jpg',
-                name: 'JavaScript 技術手冊',
+                imgSrc: 'https://openhome.cc/Gossip/images/twitter.png',
+                name: 'JavaScript 2.8 技術手冊',
               ),
             ],
           ),
@@ -111,10 +111,10 @@ class _MyHomePageState extends State<MyHomePage> {
           color: const Color(0XFFFFB2BF),
           child: const TabBar(tabs: [
             Tab(
-              text: 'Java',
+              text: 'Python',
             ),
             Tab(
-              text: 'Python',
+              text: 'Java',
             ),
             Tab(
               text: 'JavaScript',
