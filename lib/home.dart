@@ -10,13 +10,20 @@ class Home extends StatelessWidget {
     final Controller c = Get.put(Controller());
 
     return Scaffold(
-      appBar: AppBar(title: Obx(() => Text('Clicks: ${c.count}'))),
+      appBar: AppBar(
+          title: Obx(() => Text(
+                'Clicks: ${c.count}',
+                style: const TextStyle(color: Colors.yellow),
+              ))),
       body: Center(
         child: TextButton(
           onPressed: () {
             Get.to(Other());
           },
-          child: const Text('Go to Other'),
+          child: const Text(
+            'Go to Other',
+            style: TextStyle(color: Colors.pink),
+          ),
         ),
       ),
       floatingActionButton: IconButton(
@@ -32,10 +39,16 @@ class Home extends StatelessWidget {
 class Other extends StatelessWidget {
   final Controller c = Get.find();
 
+  Other({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(child: Text('${c.count}')),
+      body: Center(
+          child: Text(
+        '${c.count}',
+        style: const TextStyle(color: Colors.blue),
+      )),
     );
   }
 }
