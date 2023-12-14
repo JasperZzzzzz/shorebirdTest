@@ -5,18 +5,18 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "shorebirdTest",
+            "name": "shorebird_test",
             "request": "launch",
             "type": "dart"
         },
         {
-            "name": "shorebirdTest (profile mode)",
+            "name": "shorebird_test (profile mode)",
             "request": "launch",
             "type": "dart",
             "flutterMode": "profile"
         },
         {
-            "name": "shorebirdTest (release mode)",
+            "name": "shorebird_test (release mode)",
             "request": "launch",
             "type": "dart",
             "flutterMode": "release"
